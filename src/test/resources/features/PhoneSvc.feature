@@ -4,7 +4,7 @@ Feature: Phone Svc
   @Smoke
   Scenario: Verify phone details are displayed in the response
     Given the "phone_svc" endpoint is available
-    When "phone_svc" is called
+    When request is called
     Then status 200 is displayed in the response
     And phone names starting with "Apple" is displayed in the response
     And phone with lowest cost is displayed
