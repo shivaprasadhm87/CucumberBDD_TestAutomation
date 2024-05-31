@@ -6,9 +6,6 @@ import java.util.Properties;
 
 import com.shiftlefttautomation.*;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-
 public class PhoneAPIMethods {
 
 	public static final String ENV = "dev";
