@@ -32,33 +32,22 @@ public class ApiUtility {
         this.body = body;
     }
 
-    // Reusable methods for different request types
-    public void get() {
-        sendRequest(Method.GET);
-    }
-
-    public void post() {
-        sendRequest(Method.POST);
-    }
-
-    public void put() {
-        sendRequest(Method.PUT);
-    }
-
-    public void delete() {
-        sendRequest(Method.DELETE);
-    }
-
-    // Private method to send the request
-    private void sendRequest(Method method) {
+    public void sendRequest(String httpMethod, String contentType, String requestBody) {
         response = given()
                 .baseUri(baseUri)
-//                .headers(headers)
-//                .body(body)
+              .headers("Content-type",contentType)
+               .body(requestBody)
                 .when()
-                .request(method, endpoint);
-        System.out.println(response);
-    }
+                .request(httpMethod, endpoint);
+        }
+    
+//    public void sendRequest(String httpMethod) {
+//        response = given()
+//                .baseUri(baseUri)
+//                .when()
+//                .request(httpMethod, endpoint);
+//        }
+   
 
     // Method to get the response
     public Response getResponse() {

@@ -1,7 +1,7 @@
 Feature: Phone Svc
   As a user, I want to get phone details so that I can review my data
 
-  @Smoke
+  @Smoke @Zephyr-ID @High 
   Scenario: Verify phone details are displayed in the response
     Given the "phone_svc" endpoint is available
     When request is called

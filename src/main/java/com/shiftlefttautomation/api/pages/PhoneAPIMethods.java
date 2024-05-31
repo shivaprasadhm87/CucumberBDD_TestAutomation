@@ -6,7 +6,8 @@ import java.util.Properties;
 
 import com.shiftlefttautomation.*;
 
-import io.opentelemetry.api.internal.StringUtils;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 public class PhoneAPIMethods {
 
@@ -17,28 +18,25 @@ public class PhoneAPIMethods {
 		Properties prop = new Properties();
 		InputStream file = new FileInputStream("src/main/resources/phoneSvc.Properties");
 		prop.load(file);
-		url = prop.getProperty("phone_svc");
+		url = prop.getProperty(endPoint);
 		String env = prop.getProperty("com.shiftleftautomation.test.environment");
-		
-		if (env == "") {
+
+		if (env.equals("")) {
 			url = url.replace("{0}", ENV);
-		}
-		else {
+		} else {
 			url = url.replace("{0}", env);
 		}
 		return url;
-		
+
 	}
-	
-	public String getService(String Svc) throws Exception {
+
+	public String getResource(String resource) throws Exception {
 		String service = null;
 		Properties prop = new Properties();
 		InputStream file = new FileInputStream("src/main/resources/phoneSvc.Properties");
 		prop.load(file);
-		service = prop.getProperty(Svc);
+		service = prop.getProperty(resource);
 		return service;
 	}
-	
-	//public String get
 
 }
