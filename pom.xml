@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.shiftleftAutomation</groupId>
-	<artifactId>PhoneSvc_BDD</artifactId>
+	<groupId>com.CucumberTestAutomation</groupId>
+	<artifactId>CucumberBDD_TestAutomation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -42,17 +42,26 @@
 			<artifactId>cucumber-reporting</artifactId>
 			<version>5.8.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreport-allure-annotation -->
-		<dependency>
-			<groupId>tech.grasshopper</groupId>
-			<artifactId>extentreport-allure-annotation</artifactId>
-			<version>1.0.2</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 <dependency>
     <groupId>tech.grasshopper</groupId>
     <artifactId>extentreports-cucumber7-adapter</artifactId>
     <version>1.14.0</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>7.18.0</version>
+</dependency>
+
 	</dependencies>
 </project>

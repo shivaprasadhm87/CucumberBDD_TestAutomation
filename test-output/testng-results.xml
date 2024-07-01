@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-31T12:54:03 CDT" name="Default suite" finished-at="2024-05-31T12:54:06 CDT" duration-ms="3427">
+  <suite started-at="2024-07-01T10:49:34 CDT" name="Default suite" finished-at="2024-07-01T10:49:43 CDT" duration-ms="9377">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shiftleftautomation.runner.TestRunner@291caca8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shiftleftautomation.runner.TestRunner@5b94b04d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-05-31T12:54:03 CDT" name="Default test" finished-at="2024-05-31T12:54:06 CDT" duration-ms="3427">
+    <test started-at="2024-07-01T10:49:34 CDT" name="Default test" finished-at="2024-07-01T10:49:43 CDT" duration-ms="9377">
       <class name="com.shiftleftautomation.runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.shiftleftautomation.runner.TestRunner@291caca8]" started-at="2024-05-31T12:54:03 CDT" name="setUpClass" finished-at="2024-05-31T12:54:03 CDT" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.shiftleftautomation.runner.TestRunner@5b94b04d]" started-at="2024-07-01T10:49:34 CDT" name="setUpClass" finished-at="2024-07-01T10:49:34 CDT" duration-ms="592" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7540160e]]>
+                <![CDATA[org.testng.TestRunner@6f9ad11c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shiftleftautomation.runner.TestRunner@291caca8]" started-at="2024-05-31T12:54:04 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-31T12:54:06 CDT" duration-ms="2755" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shiftleftautomation.runner.TestRunner@5b94b04d]" started-at="2024-07-01T10:49:34 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-01T10:49:42 CDT" duration-ms="7943" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify phone details are displayed in the response"]]>
+                <![CDATA["Verify user is able to place order successfully"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Phone Svc"]]>
+                <![CDATA["Placing an order"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.shiftleftautomation.runner.TestRunner@291caca8]" started-at="2024-05-31T12:54:06 CDT" name="tearDownClass" finished-at="2024-05-31T12:54:06 CDT" duration-ms="50" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.shiftleftautomation.runner.TestRunner@5b94b04d]" started-at="2024-07-01T10:49:42 CDT" name="tearDownClass" finished-at="2024-07-01T10:49:43 CDT" duration-ms="800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
